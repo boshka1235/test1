@@ -1,0 +1,18 @@
+NAME		= bsq
+
+SOURCE		= *.c
+
+FLAGS		= -Wall -Wextra -Werror
+
+RM			=  /bin/rm -f
+
+${CC}		= gcc
+
+${NAME}:
+			${CC} ${FLAGS} -o ${NAME} ${SOURCE}
+
+clean:
+			${RM} *.o
+
+fclean:		clean
+			${RM} ${NAME}
